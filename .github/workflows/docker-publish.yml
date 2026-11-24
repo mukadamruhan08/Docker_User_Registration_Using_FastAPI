@@ -110,7 +110,6 @@ jobs:
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/user-management-api:latest
             ${{ secrets.DOCKER_USERNAME }}/user-management-api:${{ github.sha }}
-
       - name: Display Image Digest
         run: |
           echo "Image digest: ${{ steps.docker-build.outputs.digest }}"
